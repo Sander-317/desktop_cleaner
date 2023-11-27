@@ -18,26 +18,10 @@ def get_screenshots(search_term, dir_name):
 
     os.chdir(desktop_path)
     for i in new_list:
-        # print(i)
-        # print(f"{os.path.dirname(os.path.abspath(i))}/{i}")
-        print("working dir",os.getcwd())
+        # print("working dir",os.getcwd())
         file = os.path.join(os.path.dirname(os.path.abspath(i)), i) 
-        print("file",file)
-        
+        # print("file",file)
         shutil.move(file, new_folder_path)
-        # print(file)
-    # [print(i) for i in new_list]
-    # return new_list
+    
 
 get_screenshots("Screenshot" , "screenshots")
-# [print(i) for i in get_screenshots("testfile")]
-# def move_screenshots():
-    # screenshots = get_screenshots("testfile","testfiles")
-    # for i in screenshots:
-    #     print(i)
-    #     print(os.path.dirname(os.path.abspath(i)))
-    
-    # print(screenshots)
-    # [print(i) for i in screenshots]
-
-# move_screenshots()
