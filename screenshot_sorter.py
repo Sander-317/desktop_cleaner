@@ -6,7 +6,7 @@ to_sort_path = "/Users/sander/Desktop/screenshots"
 
 to_sort_files = os.listdir(to_sort_path)
 
-[print(i[10:21]) for i in to_sort_files]
+# [print(i[10:21]) for i in to_sort_files]
 os.chdir(to_sort_path)
 for i in to_sort_files:
     print("working dir",os.getcwd())
@@ -21,8 +21,8 @@ for i in to_sort_files:
 
     
     
-    print(date.strftime("%A %dth of %B %Y "))
-    print(date.strftime("%B"))
-    print(type(date.strftime("%B")))
+    # print(date.strftime("%A %dth of %B %Y "))
+    # print(date.strftime("%B"))
+    # print(type(date.strftime("%B")))
     # print(date.year)
    
